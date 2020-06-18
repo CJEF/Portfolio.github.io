@@ -1,0 +1,29 @@
+//main: ../style.less
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 42px;
+}
+.social__link {
+    margin-right: 10px;
+    text-decoration: none;
+    transition: transform .2s linear;
+    &:hover {
+        transform: translateY(-5px);
+    }   
+}
+
+.first__social {
+    display: flex;
+    margin-bottom: 10px;
+}
+.second__social{
+    display: flex;
+}
+.social {
+    @media @mobile {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+}
+

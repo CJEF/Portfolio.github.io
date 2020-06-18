@@ -1,0 +1,83 @@
+//main: ../style.less
+
+.timeline {
+    display: flex;
+    margin: 4.2rem auto;
+    width: 100%;
+    max-width: 768px;
+    position: relative;
+
+    &:before {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+        background-color: @black;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 1;
+    }
+}
+
+.timeline__col {
+    width: 50%;
+
+    &--left {
+        text-align: right;
+        padding-right: 3.2rem;
+    }
+
+    &--right {
+        text-align: left;
+        padding-left: 3.2rem;
+    }
+}
+
+.timeline__item {
+    margin-bottom: 2.53rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.timeline__title {
+    margin-bottom: 2.6rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: @black;
+    text-transform: uppercase;
+}
+
+.timeline__date {
+    display: block;
+    margin-bottom: 0.8rem;
+
+    text-decoration: underline;
+    font-size: 0.94rem;
+    color: @black;
+}
+
+.timeline__subtitle {
+    margin-bottom: 0.2rem;
+
+    font-size: 1.06rem;
+    font-weight: 700;
+    color: @black;
+}
+
+.timeline__position {
+    font-size: 0.94rem;
+    font-style: italic;
+    color: @black;
+}
+
+.timline__text {
+    margin-top: 0.533rem;
+    /* прописан отступ сверху а не снизу  у  .timeline__position потому что если не будет описания, не будет лишнего отступа снизу у позиции*/
+    line-height: 1.5;
+    font-size: 0.8rem;
+    color: @gray;
+    font-weight: 300;
+}

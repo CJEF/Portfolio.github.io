@@ -1,0 +1,59 @@
+//main: ../style.less
+.work {
+    overflow: hidden;
+    box-shadow: 0 0 4px fade(#000, 25%);
+    border-radius: 10px;
+    transition: box-shadow .2s linear;
+
+    &:hover {
+        box-shadow: 0 0 25px fade(#000, 25%);
+        /* при навидении на блок увеличевается тень */
+    }
+}
+
+.work__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /* adaptive image */
+}
+
+.work__content {
+    padding: 0.9rem 0.8rem;
+
+    @media @mobile-sm {
+        padding: 0.5rem 0.4rem;
+    }
+}
+
+.work__cat {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: @black;
+
+    @media @mobile {
+        font-size: 0.5rem;
+    }
+
+    @media @mobile-sm {
+        font-size: 0.8rem;
+    }
+}
+
+.work__title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.06rem;
+    text-transform: uppercase;
+    color: @black;
+    font-weight: 700;
+
+    @media @mobile {
+        font-size: 0.95rem;
+    }
+
+    @media @mobile-sm {
+        font-size: 1.06rem;
+    }
+}

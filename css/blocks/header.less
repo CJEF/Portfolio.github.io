@@ -1,0 +1,26 @@
+//main: ../style.less
+.header {
+    padding: 1.2rem 0;
+    position: relative;
+    .fixed{
+        position: fixed;
+        width: 100%;
+        background-color: #fff;
+    }
+    @media @apple{
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+        position: fixed;
+        background-color: #fff;
+        right: 0;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        padding: 0.9rem 0;
+    }
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

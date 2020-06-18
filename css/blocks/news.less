@@ -1,0 +1,42 @@
+//main: ../style.less
+
+.news {
+    margin-bottom: 8rem;
+    margin-top: 14rem; //из за блока выше который был спозиционирован абсолютно, блок новостей стоя слева от аватарки автора комментария
+    @media @notebook{
+        margin-bottom: 2rem;
+        margin-top: 13rem;
+    }
+}
+
+.news__header {
+    text-align: center;
+}
+
+.news__title {
+    margin-bottom: 0.3rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: @black;
+    text-transform: uppercase;
+}
+
+.news__text {
+    margin-bottom: 3.6rem;
+    font-size: 1.2rem;
+    color: @gray-light;
+    font-weight: 300;
+}
+
+.articles__footer {
+    text-align: right;
+}
+
+.news__link {
+    font-size: 0.94rem;
+    color: @gray;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

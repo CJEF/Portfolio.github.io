@@ -1,0 +1,131 @@
+//main: ../style.less
+.intro{
+    @media @apple{
+    margin-top: 6.5rem;
+}
+}
+
+.intro__inner {
+    display: flex;
+    border-bottom: 1px solid fade(@gray, 30%);
+    padding-top: 6.6rem;
+    padding-bottom: 8rem;
+    position: relative;
+
+    @media @pro {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    @media @mobile {
+        justify-content: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.intro__content {
+    width: 50%;
+
+}
+
+.intro__subtitle {
+    font-size: 2.13rem;
+    color: @black;
+    font-weight: 200;
+
+    @media @apple {
+        font-size: 1.5rem;
+    }
+
+    @media @tablet-sm {
+        font-size: 1rem;
+    }
+
+    @media @mobile {
+        display: flex;
+        justify-content: center;
+        font-size: 2.13rem;
+    }
+}
+
+.intro__title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: @black;
+    margin-bottom: 5px;
+
+    @media @tablet {
+        font-size: 2rem;
+    }
+
+    @media @tablet-sm {
+        font-size: 1.2rem;
+    }
+
+    @media @mobile {
+        display: flex;
+        justify-content: center;
+        font-size: 2.5rem;
+    }
+
+    @media @mobile-sm {
+        font-size: 2rem;
+    }
+}
+
+.intro__text {
+    margin-bottom: 26px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: fade(@black, 70%);
+
+    @media @mobile {
+        display: flex;
+        justify-content: center;
+    }
+
+    @media @mobile-sm {
+        margin-bottom: 1rem;
+    }
+}
+
+.intro__photo {
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    z-index: 1;
+
+    @media @pro {
+        width: 350px;
+        height: auto;
+    }
+
+    @media @tablet {
+        width: 300px;
+        height: auto;
+
+    }
+
+    @media @tablet-sm {
+        bottom: 50px;
+    }
+
+    @media @mobile {
+        display: none;
+    }
+}
+
+.intro__button {
+    @media @mobile {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.first__button {
+    @media @tablet-sm {
+        margin-bottom: 1rem;
+    }
+}
