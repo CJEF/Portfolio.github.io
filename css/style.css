@@ -2,6 +2,7 @@ html {
   font-size: 15px;
 }
 body {
+  min-width: 360px;
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
@@ -298,8 +299,8 @@ p {
 @media (max-width: 555px) {
   .intro__inner {
     justify-content: center;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 0;
   }
 }
 .intro__content {
@@ -392,12 +393,17 @@ p {
 }
 @media (max-width: 670px) {
   .intro__photo {
-    bottom: 50px;
+    bottom: 70px;
   }
 }
 @media (max-width: 555px) {
   .intro__photo {
-    display: none;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+  }
+  .intro__content{
+    width: auto;
   }
 }
 @media (max-width: 555px) {
@@ -405,6 +411,8 @@ p {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+    margin-bottom: 90px;
   }
 }
 @media (max-width: 670px) {
@@ -499,14 +507,16 @@ p {
 .works__nav {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
   margin-top: 5rem;
+  flex-direction: column;
+  text-align: center;
 }
 .works__nav-link {
   margin: 0 1.2rem;
   font-size: 0.8rem;
   color: rgba(43, 42, 44, 0.7);
   font-weight: 400;
+  padding-bottom: 0.5rem;
 }
 .works__nav-link:hover {
   text-decoration: underline;
@@ -1028,6 +1038,14 @@ p {
     font-size: 2.5rem;
   }
 }
+@media (max-width: 460px) {
+  .modal__title {
+    font-size: 1.8rem;
+  }
+  .modal__subtitle{
+    font-size: 0.9rem;
+  }
+}
 .modal__subtitle {
   font-size: 1.06rem;
   text-transform: uppercase;
@@ -1072,7 +1090,7 @@ p {
   margin: 0 1rem;
 }
 .modal-work__client {
-  margin-bottom: 2.2rem;
+  margin-bottom: 1.2rem;
 }
 .modal-work__client-title {
   margin-bottom: 0.2rem;
@@ -1119,6 +1137,7 @@ p {
   max-width: 768px;
   position: relative;
 }
+
 .timeline:before {
   content: "";
   display: block;
@@ -1369,4 +1388,33 @@ p {
   .about__photo img{
     width: 300px;
   }
+}
+@media(max-width: 768px){
+  .timeline{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2.2rem auto;
+  }
+  .modal__content{
+    padding: 3.2rem 1rem;
+  }
+  .timeline:before {
+    display: none;
+  }
+  .timeline__col--left,
+  .timeline__col--right{
+    padding: 0 1.5rem;
+    text-align: left;
+    width: 100%;
+  }
+  .timeline__col--left{
+    order: 1;
+  }
+  .modal__title{
+    margin-bottom: 1.6rem;
+  }
+}
+@media (max-width:400px) {
+  .modal__subtitle{ font-size: .9rem;}  
 }
