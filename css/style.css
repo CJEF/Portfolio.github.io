@@ -31,6 +31,9 @@ p {
 *:after {
   box-sizing: border-box;
 }
+img {
+  max-width: 100%;
+}
 .slick-slider {
   position: relative;
   display: flex;
@@ -1058,6 +1061,7 @@ p {
   width: 65%;
   position: relative;
   overflow: hidden;
+  min-height: 570px;
 }
 .modal-work__photo {
   position: absolute;
@@ -1345,6 +1349,11 @@ p {
 .to-top:hover{
   border-color: transparent transparent #3765af transparent;
 }
+@media(max-width:1250px){
+  .modal-work__preview{
+    min-height: 100%;
+  }
+}
 @media(max-width:992px){
   .modal-work{
     flex-direction: column;
@@ -1357,7 +1366,6 @@ p {
     order: 1;
   }
   .modal-work__preview{
-    height: 500px;
     order: 2;
     margin: 0 auto 1rem;
   }
@@ -1387,6 +1395,11 @@ p {
   }
   .about__photo img{
     width: 300px;
+  }
+}
+@media(max-width:430px){
+  .slick-dots{
+    display: none;
   }
 }
 @media(max-width: 768px){
