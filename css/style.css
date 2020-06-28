@@ -418,11 +418,6 @@ img {
     margin-bottom: 90px;
   }
 }
-@media (max-width: 670px) {
-  .first__button {
-    margin-bottom: 2rem;
-  }
-}
 .social {
   display: flex;
   flex-wrap: nowrap;
@@ -448,7 +443,7 @@ img {
 @media (max-width: 555px) {
   .social {
     justify-content: center;
-    margin-bottom: 3.5rem;
+    margin-bottom: 2rem;
   }
 }
 .btn {
@@ -479,7 +474,7 @@ img {
   color: #ffffff;
   border-color: #2b2a2c;
 }
-.btn + .btn {
+.second__button {
   margin-left: 1rem;
 }
 @media (max-width: 670px) {
@@ -510,7 +505,6 @@ img {
 .works__nav {
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
   flex-direction: column;
   text-align: center;
 }
@@ -760,133 +754,6 @@ img {
 }
 .reviews__star--unactive {
   opacity: 0.3;
-}
-.news {
-  margin-bottom: 8rem;
-  margin-top: 14rem;
-}
-@media (max-width: 1199px) {
-  .news {
-    margin-bottom: 2rem;
-    margin-top: 13rem;
-  }
-}
-.news__header {
-  text-align: center;
-}
-.news__title {
-  margin-bottom: 0.3rem;
-  font-size: 3rem;
-  font-weight: 700;
-  color: #2b2a2c;
-  text-transform: uppercase;
-}
-.news__text {
-  margin-bottom: 3.6rem;
-  font-size: 1.2rem;
-  color: #8d8d8e;
-  font-weight: 300;
-}
-.articles__footer {
-  text-align: right;
-}
-.news__link {
-  font-size: 0.94rem;
-  color: #6a696b;
-}
-.news__link:hover {
-  text-decoration: underline;
-}
-.articles {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -1rem;
-}
-.articles__col {
-  width: 33.33333%;
-  padding: 0 1rem;
-}
-@media (max-width: 1199px) {
-  .articles__col {
-    width: 100%;
-    padding: 0 13rem;
-  }
-}
-@media (max-width: 810px) {
-  .articles__col {
-    width: 100%;
-    padding: 0 4rem;
-  }
-}
-@media (max-width: 810px) {
-  .articles__col {
-    width: 100%;
-    padding: 0;
-  }
-}
-.articles__item {
-  margin-bottom: 2rem;
-}
-@media (max-width: 1199px) {
-  .articles__item {
-    text-align: center;
-  }
-}
-.articles__header {
-  position: relative;
-  margin-bottom: 1.35rem;
-}
-.articles__date {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 77px;
-  height: 77px;
-  background-color: #2b2a2c;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  font-size: 1.06rem;
-  line-height: 1.4;
-  color: #ffffff;
-}
-@media (max-width: 1199px) {
-  .articles__date {
-    display: none;
-  }
-}
-.articles__content .articles__photo {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.articles__title {
-  font-size: 1.2rem;
-  color: #2b2a2c;
-  font-weight: 700;
-  margin-bottom: 0.45rem;
-  text-transform: uppercase;
-}
-.articles__title a {
-  color: inherit;
-}
-.articles__title a:hover {
-  text-decoration: underline;
-}
-.articles__cat {
-  font-size: 0.8rem;
-  margin-bottom: 1.5rem;
-  color: #2b2a2c;
-  text-transform: uppercase;
-}
-.articles__text {
-  color: #6a696b;
-  font-size: 1.1rem;
-  line-height: 2;
-  font-weight: 300;
-  margin-bottom: 1.56rem;
 }
 .footer {
   background-color: #2b2a2c;
@@ -1344,6 +1211,7 @@ img {
     bottom: 2%;
     right: 1%;
     cursor: pointer;
+    z-index: 5;
     -webkit-transition: border-color .3s;
     -moz-transition: border-color .3s;
     -ms-transition: border-color .3s;
@@ -1433,4 +1301,68 @@ img {
 }
 @media (max-width:400px) {
   .modal__subtitle{ font-size: .9rem;}  
+}
+.about-works__inner {
+  margin: 0 auto;
+  padding: 200px 0 50px;
+}
+.about__works-cards{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.about-works__title{
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.cardImage {
+    width: 90px;
+    display: block;
+    margin-bottom: 10px;
+    opacity: 1;
+    transition: .5s;
+}
+.card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 15px;
+    margin: 20px;
+    width: 30%;
+    transition: .5s;
+    color: #ccc;
+    background-color: #333;
+    min-width: 250px;
+}
+.card p {
+    cursor: default;
+    margin-bottom: 0;
+}
+.card:hover {
+  background-color: #570057;
+  color: #fff;
+  border-color: #333;
+  transform: scale(1.2);
+}
+.card:hover .cardImage{
+    opacity: 1;
+}
+@media (max-width:600px) {
+  .about-works__inner {
+    padding: 150px 0 25px;
+  }
+}
+@media (max-width: 745px) {
+  .first__button {
+    margin-bottom: 1rem;
+  }
+  .second__button {
+    margin-left: 0;
+  }
 }
