@@ -1366,3 +1366,8 @@ img {
     margin-left: 0;
   }
 }
+@media (max-width: 576px) {
+  .about-works__title {
+    font-size: 2rem;
+  }
+}
